@@ -42,27 +42,39 @@
         <!-- row-3 -->
         <div class="cerca-3">
           <div class="cerca">
-            <input type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
+
+            <input type="text" name="" value="" placeholder='Cerca o inizia una nuova chat'>
           </div>
         </div>
         <!-- finecerca3 -->
         <!-- iniziochat -->
+  <div class="scroll-chat">
 
-          <ul  class="demo">
-           <li  class="demo-chat" v-for="value in object">
-            <div class="demo-chats">
-              <div class="img-logo">
-                <img v-bind:src=value.img alt="">  </div>
-              <div class="demo-text">
-                <p>{{value.text}}</p>
-                <p>{{value.message}}</p>
-              </div>
-            </div>
-         </li>
-         </ul>
+      <ul  class="demo">
+       <li  class="demo-chat" @click="prova(index)" v-for="(value,index) in object">
+        <div class="demo-chats">
+          <div class="img-logo">
+            <img v-bind:src=value.img alt="">  </div>
+          <div class="demo-text">
+            <p>{{value.text}}</p>
+            <p>{{value.message}}</p>
+          </div>
+        </div>
+     </li>
+     </ul>
+  </div>
 
         <!-- fine chat-->
       </aside>
+     <div class="nav-bar">
+       <nav>
+         <img v-bind:src=" object[currentUser].img" alt="">
+         <p>{{object[currentUser].text}}</p>
+       </nav>
+       <section class="section">
+
+       </section>
+     </div>
     </div>
   </div>
 </div>
