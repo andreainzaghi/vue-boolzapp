@@ -1,0 +1,101 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+body{
+font-family: 'Lato', sans-serif;
+}
+.row{
+  background: linear-gradient(to top, #dbdbd2 75%, #009688 74%);
+  width:100%;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.contenitore{
+  background-color: lightgrey;
+  width:1000px;
+  height:650px;
+
+}
+/* aside */
+.side-laterale{
+  width:360px;
+  height:100%;
+  background-color: #fff;
+}
+.row-1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:#EDEDED;
+}
+.img-profilo img{
+  width:40px;
+  border-radius: 50%;
+  margin: 10px 15px;
+
+}
+.icone-1 {
+  display: flex;
+  margin-right: 7px;
+}
+.icone-1 i{
+padding:0px 10px;
+color:#CAC5C5;
+}
+.row-2{
+  display: flex;
+
+  align-items: center;
+  height:90px;
+  background-color:#9FDCF8;
+}
+.icona-2 i{
+  margin:0 15px;
+  padding: 12px 10px;
+  background-color: #fff;
+  color:#9FDCF8;
+  border-radius: 50%;
+}
+.scritte-2{
+  font-size: 15px;
+}
+.cerca input{
+  width:330px;
+  height:35px;
+  padding:10px;
+  border-radius: 20px;
+  border: none;
+}
+.cerca-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:60px;
+  background-color: #EDEDED;
+}
+#root img{
+  width:40px;
+  border-radius: 50%;
+  margin: 10px 15px;
+}
+#root{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  width:95%;
+  margin:auto;
+  border-color: lightgrey;
+}
+.nome p:first-child{
+  font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 4px;
+}
+.nome p:last-child{
+  font-size: 14px;
+}

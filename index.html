@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0;1,300&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="contenitore">
+      <aside class="side-laterale">
+        <!-- row-1 -->
+        <div class="row-1">
+          <div class="img-profilo">
+            <img src="img/avatar_1.jpg" alt="">
+          </div>
+          <div class="icone-1">
+            <i class="fas fa-circle-notch"></i>
+            <i class="fas fa-comment-alt"></i>
+            <i class="fas fa-ellipsis-v"></i>
+          </div>
+        </div>
+        <!-- finerow-1 -->
+        <!-- row-2 -->
+        <div class="row-2">
+          <div class="icona-2">
+            <i class="fas fa-bell-slash"></i>
+          </div>
+          <div class="scritte-2">
+            <p>Ricevi notifiche di nuovi messaggi</p>
+            <p>Attiva notifiche desktop ></p>
+          </div>
+        </div>
+        <!-- finerow-2 -->
+        <!-- row-3 -->
+        <div class="cerca-3">
+          <div class="cerca">
+            <input type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
+          </div>
+        </div>
+        <!-- finecerca3 -->
+        <!-- iniziochat -->
+        <div id="root">
+          <div class="logo-chat">
+            <img v-bind:src="img" alt="" >
+          </div>
+          <div class="nome">
+             <p v-bind:title="text">{{ text }}</p>
+             <p v-bind:title="message">{{ message }}</p>
+          </div>
+        </div>
+        <!-- fine chat -->
+        <!-- iniziochat -->
+        <div id="root">
+          <div class="logo-chat">
+            <img v-bind:src="img" alt="" >
+          </div>
+          <div class="nome">
+             <p v-bind:title="text">{{ text }}</p>
+             <p v-bind:title="message">{{ message }}</p>
+          </div>
+        </div>
+        <!-- fine chat -->
+        <!-- iniziochat -->
+        <div id="root">
+          <div class="logo-chat">
+            <img v-bind:src="img" alt="" >
+          </div>
+          <div class="nome">
+             <p v-bind:title="text">{{ text }}</p>
+             <p v-bind:title="message">{{ message }}</p>
+          </div>
+        </div>
+        <!-- fine chat -->
+        <!-- iniziochat -->
+        <div id="root">
+          <div class="logo-chat">
+            <img v-bind:src="img" alt="" >
+          </div>
+          <div class="nome">
+             <p v-bind:title="text">{{ text }}</p>
+             <p v-bind:title="message">{{ message }}</p>
+          </div>
+        </div>
+        <!-- fine chat -->
+      </aside>
+    </div>
+  </div>
+</div>
+<script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
