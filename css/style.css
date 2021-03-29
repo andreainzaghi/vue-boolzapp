@@ -78,12 +78,12 @@ color:#CAC5C5;
   height:60px;
   background-color: #EDEDED;
 }
-#ro4ot img{
+.img-logo img{
   width:40px;
   border-radius: 50%;
   margin: 10px 15px;
 }
-#ro4ot{
+.demo-chat{
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
@@ -91,11 +91,15 @@ color:#CAC5C5;
   margin:auto;
   border-color: lightgrey;
 }
-.nome p:first-child{
+.demo-text p:first-child{
   font-weight: bold;
     font-size: 17px;
     padding-bottom: 4px;
 }
-.nome p:last-child{
+.demo-text p:last-child{
   font-size: 14px;
+}
+.demo-chats{
+  display: flex;
+  align-items: center;
 }

@@ -49,7 +49,16 @@
         <!-- iniziochat -->
 
           <ul  class="demo">
-           <li v-for="value in object"> {{value}} </li>
+           <li  class="demo-chat" v-for="value in object">
+            <div class="demo-chats">
+              <div class="img-logo">
+                <img v-bind:src=value.img alt="">  </div>
+              <div class="demo-text">
+                <p>{{value.text}}</p>
+                <p>{{value.message}}</p>
+              </div>
+            </div>
+         </li>
          </ul>
 
         <!-- fine chat-->
