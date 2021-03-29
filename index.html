@@ -47,15 +47,11 @@
         </div>
         <!-- finecerca3 -->
         <!-- iniziochat -->
-        <div id="ro4ot" >
-          <div class="logo-chat">
-            <img v-bind:src="img" alt="" >
-          </div>
-          <div class="nome">
-             <p v-bind:title="text">{{ text }}</p>
-             <p v-bind:title="message">{{ message }}</p>
-          </div>
-        </div>
+
+          <ul  class="demo">
+           <li v-for="value in object"> {{value}} </li>
+         </ul>
+
         <!-- fine chat-->
       </aside>
     </div>
