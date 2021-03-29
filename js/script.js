@@ -22,7 +22,7 @@ function printIcons(place, icons) {
   icons.forEach(( icon ) => {
     const {img,text,message,} = icon;
     const page = `
-  
+
     <div id="root">
       <div class="logo-chat">
         <img src=${img} alt="" >
@@ -34,7 +34,7 @@ function printIcons(place, icons) {
     </div>
 
     `;
-    place.append(page);
+    document. getElementById(“root”).innerText +=  “page” ;
   });
 }
 
