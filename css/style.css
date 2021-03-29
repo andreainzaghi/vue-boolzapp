@@ -176,6 +176,11 @@ nav img{
   right:0px;
   left:360px;
   bottom:64px;
-
   background-image: url(../img/mine.jpg);
+}
+.chat-mess-v-g{
+  width:600px;
+  height:100%;
+  background-color: red;
+  margin: auto;
 }
