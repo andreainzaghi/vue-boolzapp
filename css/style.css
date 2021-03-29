@@ -167,7 +167,7 @@ nav img{
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: lightgrey;
 }
 /* sfondochat */
 .sfondo-chat{
