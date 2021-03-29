@@ -152,7 +152,7 @@ nav img{
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 /* Track */
