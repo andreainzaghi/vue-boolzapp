@@ -1,56 +1,84 @@
-var root = new Vue({
-el: '#root',
-data: {
-     img: 'img/avatar_2.jpg',
-     text: 'Luigi',
-     message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
-     list: [
-       'Seguire la lezione',
-       'Leggere la documentazione VueJs',
-       'Fare prove'
-         ]
+// var root = new Vue({
+// el: '#root',
+// data: {
+//      img: 'img/avatar_2.jpg',
+//      text: 'Luigi',
+//      message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+//      list: [
+//        'Seguire la lezione',
+//        'Leggere la documentazione VueJs',
+//        'Fare prove'
+//          ]
+//
+//     },
+//    methods: {
+//
+//    }
+//
+// });
+//Funzione per stampare le icone in pagina con due parametri
+function printIcons(place, icons) {
+  place.html('');
+  icons.forEach(( icon ) => {
+    const {img,text,message,} = icon;
+    const page = `
+  
+    <div id="root">
+      <div class="logo-chat">
+        <img src=${img} alt="" >
+      </div>
+      <div class="nome">
+         <p >${ text }</p>
+         <p >${ message }</p>
+      </div>
+    </div>
 
-    },
-   methods: {
+    `;
+    place.append(page);
+  });
+}
 
-   }
-
-});
 const Icons = [
   {
-    name: 'apple-alt',
-    family: 'fas',
-    prefix: 'fa-',
-    category: "food"
-  },
-  {
-    name: 'ice-cream',
-    family: 'fas',
-    prefix: 'fa-',
-    category: "food"
-  },
-  {
-    name: 'fish',
-    family: 'fas',
-    prefix: 'fa-',
-    category: "food"
-  },
-  {
-    name: 'lemon',
-    family: 'fas',
-    prefix: 'fa-',
-    category: "food"
-  },
-  {
-    name: 'hamburger',
-    family: 'fas',
-    prefix: 'fa-',
-    category: "food"
-  },
-  {
-    name: 'pizza-slice',
-    family: 'fas',
-    prefix: 'fa-',
-    category: "food"
-  },
+      img: 'img/avatar_2.jpg',
+      text: 'Luigi',
+      message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+
+
+     },
+ {
+     img: 'img/avatar_3.jpg',
+     text: 'Don.Pippo',
+     message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+
+
+    },
+{
+     img: 'img/avatar_4.jpg',
+     text: 'Davide',
+     message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+
+
+    },
+{
+     img: 'img/avatar_5.jpg',
+     text: 'Inza',
+     message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+
+
+    },
+{
+     img: 'img/avatar_6.jpg',
+     text: 'Carlo',
+     message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+
+
+    },
+{
+     img: 'img/avatar_7.jpg',
+     text: 'Franco',
+     message: 'Ciao Franco come va? ' + new Date().toLocaleString(),
+
+
+    },
 ];
