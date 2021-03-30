@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous"></script>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
@@ -69,37 +70,40 @@
 
         <!-- fine chat-->
       </aside>
-     <div class="nav-bar">
-       <nav>
-         <img v-bind:src=" object[currentUser].img" alt="">
-         <p>{{object[currentUser].text}}</p>
-       </nav>
-       <!-- nav bassa input -->
-       <section class="section">
-         <i class="far fa-smile"></i>
-         <i class="fas fa-book"></i>
-         <input type="text"
-       placeholder="Scrivi un messaggio..."
-        v-model="newItem"
-         @keyup.13="addItem">
-          <button @click="addItem">Aggiungi</button>
-         <i class="fas fa-microphone"></i>
-       </section>
-       <!-- fine nav bassa input -->
-     </div>
-     <div class="sfondo-chat">
-       <div class="chat-mess-v">
-         <div class="verde" v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
-         <p>{{element.message}}</p>
-         <p><small>{{element.date}}</small></p>
-       </div>
+         <div class="nav-bar">
+           <nav>
+             <img v-bind:src=" object[currentUser].img" alt="">
+             <p>{{object[currentUser].text}}</p>
+           </nav>
+           <!-- nav bassa input -->
+           <section class="section">
+             <i class="far fa-smile"></i>
+             <i class="fas fa-book"></i>
+             <input type="text"
+           placeholder="Scrivi un messaggio..."
+            v-model="newItem"
+             @keyup.13="addItem"
+             >
+              <button class="bottone" @click="addItem"><i class="fas fa-play"></i></button>
+             <i class="fas fa-microphone"></i>
+           </section>
+           <!-- fine nav bassa input -->
+         </div>
+           <div class="sfondo-chat">
+             <div class="chat-mess-v">
+               <div class="verde" v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
+               <p>{{element.message}}</p>
+               <p><small>{{element.date}}</small></p>
+             </div>
 
-         <div class="verde1" v-for="element in object[currentUser].messge" v-if="element.status == 'received'">
-         <p>{{element.message}}</p>
-         <p><small>{{element.date}}</small></p>
-       </div>
-  </div>
+             <div class="verde1" v-else>
+             <p>{{element.message}}</p>
+             <p><small>{{element.date}}</small></p>
+           </div>
+          </div>
+        </div >
 
+    </div>
   </div>
 </div>
 <script src="js/script.js" charset="utf-8"></script>
