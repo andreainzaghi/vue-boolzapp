@@ -81,7 +81,7 @@
      <div class="sfondo-chat">
        <div class="chat-mess-v-g">
          <div v-for="element in object[currentUser].messge" v-if="element.status == 'sent' ? 'send' : 'receive' " >
-         <p>{{element.text}}</p>
+         <p>{{element.message}}</p>
          <p><small>{{element.date}}</small></p>
        </div>
      </div>
