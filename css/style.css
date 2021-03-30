@@ -74,6 +74,7 @@ color:#CAC5C5;
   padding:10px ;
   border-radius: 20px;
   border: none;
+  outline: none;
 }
 .cerca-3{
   display: flex;
@@ -142,6 +143,9 @@ nav img{
   background-color:#EDEDED;
   height:64px;
   position:absolute;
+  display: flex;
+  align-items: center;
+
   border-left: 1px solid lightgrey;
 }
 .scroll-chat{
@@ -178,9 +182,41 @@ nav img{
   bottom:64px;
   background-image: url(../img/mine.jpg);
 }
-.chat-mess-v-g{
+.chat-mess-v{
   width:600px;
   height:100%;
-  background-color: red;
+
   margin: auto;
+}
+.verde{
+  background-color: #DDF2C2;
+  border-radius: 10px;
+  padding:7px;
+  margin:7px 14px;
+  min-width: 20%;
+
+  max-width: 50%;
+  left:50%;
+  position: relative;
+}
+.verde1{
+  background-color:#FFFFFF;
+    border-radius: 10px;
+      padding:7px;
+        margin:7px 14px;
+        min-width: 20%;
+        max-width: 50%;
+}
+.section i{
+  font-size: 25px;
+  color:grey;
+  padding:14px;
+}
+.section input{
+  width:80%;
+  height: 65%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  padding:10px 12px ;
 }

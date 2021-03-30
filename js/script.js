@@ -12,7 +12,7 @@ new Vue({
             },
             {
                 date: '10/01/2020 16:15:22',
-                message: 'Tutto fatto!',
+                message: 'cane mangia cane!',
                 status: 'received'
             },
             {
@@ -349,11 +349,18 @@ new Vue({
                  }]
         }
    ],
-   currentUser:0
+   currentUser:0,
+   newItem:''
  },
  methods:{
    prova:function(index){
      this.currentUser=index;
-   }
+   },
+   addItem: function(){
+              if (this.newItem !== ''){
+                 this.messge.push(this.newItem);
+                 this.newItem = '';
  }
+}
+
 })

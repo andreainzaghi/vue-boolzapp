@@ -74,18 +74,31 @@
          <img v-bind:src=" object[currentUser].img" alt="">
          <p>{{object[currentUser].text}}</p>
        </nav>
+       <!-- nav bassa input -->
        <section class="section">
-
+         <i class="far fa-smile"></i>
+         <i class="fas fa-book"></i>
+         <input type="text"
+       placeholder="Scrivi un messaggio..."
+        v-model="newItem"
+         @keyup.13="addItem">
+         <i class="fas fa-microphone" @click="addItem"></i>
        </section>
+       <!-- fine nav bassa input -->
      </div>
      <div class="sfondo-chat">
-       <div class="chat-mess-v-g">
-         <div v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
+       <div class="chat-mess-v">
+         <div class="verde" v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
          <p>{{element.message}}</p>
          <p><small>{{element.date}}</small></p>
        </div>
-     </div>
-    </div>
+
+         <div class="verde1" v-for="element in object[currentUser].messge" v-if="element.status == 'received'">
+         <p>{{element.message}}</p>
+         <p><small>{{element.date}}</small></p>
+       </div>
+
+
   </div>
 </div>
 <script src="js/script.js" charset="utf-8"></script>
