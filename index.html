@@ -60,7 +60,7 @@
             <img v-bind:src=value.img alt="">  </div>
           <div class="demo-text">
             <p>{{value.text}}</p>
-            <p>{{value.message[0]}}</p>
+            <p>{{value.messge[0].message}}</p>
           </div>
         </div>
      </li>
@@ -80,10 +80,9 @@
      </div>
      <div class="sfondo-chat">
        <div class="chat-mess-v-g">
-         <ul>
-            <li v-for="name in object"> {{ name.message }}</li>
-             <li v-for="risp in object">{{ risp.risposte }} </li>
-           </ul>
+         <div v-for="element in messge[currentUser].messages" v-if="element.status == 'sent' ? 'send' : 'receive' " >
+         <p>{{element.text}}</p>
+         <p><small>{{element.date}}</small></p>
        </div>
      </div>
     </div>
