@@ -358,16 +358,16 @@ new Vue({
    },
    addItem: function(){
      if (this.newItem !== ''){
-        this.object[this.currentUser].messages.push({
+        this.object[this.currentUser].messge.push({
             date: dayjs().format('DD/MM/YY HH.MM'),
             message: this.newItem,
             status: 'sent'
             });
          this.newItem = '';
-         setTimeout(this.answer, 1000)
+
     }
 }
  }
 
 
-})
+});
