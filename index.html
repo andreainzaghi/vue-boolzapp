@@ -48,7 +48,7 @@
         <div class="cerca-3" :class="colore1">
           <div class="cerca  " :class="colore1">
 
-            <input type="text" name="" value="" placeholder='Cerca o inizia una nuova chat'>
+            <input type="text" name="" value="" placeholder='Cerca o inizia una nuova chat' >
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
   <div class="scroll-chat">
 
       <ul  class="demo" :class="colore1">
-       <li  class="demo-chat" @click="prova(index)" v-for="(value,index) in object">
+       <li  class="demo-chat" @click="prova(index)" v-for="(value,index) in object ">
         <div  class="demo-chats" >
           <div class="img-logo">
             <img v-bind:src=value.img alt="">  </div>
@@ -103,11 +103,11 @@
              <p>{{element.message}}</p>
              <p><small>{{element.date}}</small></p>
            </div>
-           <div class="smile-contenitore"  v-for="icone in smile" >
+           <!-- <div class="smile-contenitore"  v-for="icone in smile" >
              <ul>
                  <li @click="inserisciSm">{{icone.smile1}}</li>
              </ul>
-           </div>
+           </div> -->
           </div>
         </div >
 

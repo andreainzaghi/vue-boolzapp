@@ -6,7 +6,7 @@ new Vue({
     colore2:'red1',
     colore:'red',
     colore1:'color-grey',
-    smile:[{smile1:'<class=\"fas fa-smile\"></i>',smile2:'<i class=\"fas fa-grin-squint-tears\"></i>',smile3:'<i class="fas fa-grin-hearts"></i>'}],
+    // smile:[{smile1:'<class=\"fas fa-smile\"></i>',smile2:'<i class=\"fas fa-grin-squint-tears\"></i>',smile3:'<i class="fas fa-grin-hearts"></i>'}],
     object: [{
       img: 'img/avatar_2.jpg',
       text: 'Luigi',
@@ -358,8 +358,10 @@ new Vue({
         }
    ],
    currentUser:0,
+
    newItem:''
  },
+
  methods:{
    prova:function(index){
      this.currentUser=index;
@@ -388,13 +390,13 @@ cambiaColore2:function(event){
      this.colore2='blue1';
   }else{
     this.colore2='red1';
-  }  
+  }
 
 },
-inserisciSm:function(){
-
-
-},
+// inserisciSm:function(){
+// icone.smile1.push(newItem);
+//
+// },
 cambiaColore1:function(event){
   if (this.colore1=='color-grey') {
      this.colore1='color-black';
