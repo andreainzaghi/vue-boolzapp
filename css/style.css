@@ -258,13 +258,26 @@ nav img{
 .demo-chats , .demo-text :hover{
   color:#2B2F32;
 }
-/* .smile-contenitore{
+.smileContenitore{
   height:190px;
   width:100%;
   background-color:#EDEDED;
+  position: relative;
+animation-name: example;
+animation-duration: 0.3s;
+z-index: 4;
+
 
 }
-.smile-contenitore ul li{
+@keyframes example {
+  0%   {background-color:#EDEDED; left:0px; bottom:-190px;}
+
+  100% {background-color:#EDEDED; left:0px; top:0px;}
+}
+.niente{
+  display:none;
+}
+/* .smile-contenitore ul li{
 display: inline-block;
 list-style: none;
 padding:10px;

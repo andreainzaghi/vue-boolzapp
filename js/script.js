@@ -2,6 +2,7 @@
 new Vue({
   el: '#root',
   data: {
+    colore5:'niente',
     colore3:'c-grey',
     colore2:'red1',
     colore:'red',
@@ -403,6 +404,14 @@ cambiaColore2:function(event){
      this.colore2='blue1';
   }else{
     this.colore2='red1';
+  }
+
+},
+smileIcons:function(){
+  if (this.colore5=='niente') {
+     this.colore5='smileContenitore';
+  }else{
+    this.colore5='niente';
   }
 
 },

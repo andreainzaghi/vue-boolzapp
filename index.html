@@ -92,7 +92,7 @@
            </nav>
            <!-- nav bassa input -->
            <section class="section " :class="colore1">
-             <i class="far fa-smile"></i>
+             <i @click="smileIcons" class="far fa-smile"></i>
              <i class="fas fa-book"></i>
              <input type="text"
            placeholder="Scrivi un messaggio..."
@@ -116,11 +116,11 @@
              <p>{{element.message}}</p>
              <p><small>{{element.date}}</small></p>
            </div>
-           <!-- <div class="smile-contenitore"  v-for="icone in smile" >
-             <ul>
-                 <li @click="inserisciSm">{{icone.smile1}}</li>
-             </ul>
-           </div> -->
+             <div :class="colore5"  >
+               <!-- <ul>
+                   <li @click="inserisciSm">{{icone.smile1}}</li>
+               </ul> -->
+             </div>
           </div>
         </div >
 
