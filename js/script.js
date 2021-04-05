@@ -358,17 +358,30 @@ new Vue({
         }
    ],
    currentUser:0,
-
+    // search: '',
    newItem:''
  },
-
+ // computed: {
+ //   filteredAndSorted(){
+ //    // function to compare names
+ //    function compare(a, b) {
+ //      if (a.name < b.name) return -1;
+ //      if (a.name > b.name) return 1;
+ //      return 0;
+ //    }
+ //
+ //    return this.userList.filter(user => {
+ //       return user.name.toLowerCase().includes(this.search.toLowerCase())
+ //    }).sort(compare)
+ //   }
+ // },
  methods:{
    prova:function(index){
      this.currentUser=index;
    },
    addItem: function(){
      if (this.newItem !== ''){
-        this.object[this.currentUser].messge.push({
+        this.object[this.currentUser].messge. push({
             date: dayjs().format('DD/MM/YY HH.MM'),
             message: this.newItem,
             status: 'sent'
