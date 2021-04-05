@@ -15,17 +15,19 @@
 </head>
 <body>
 <div id="root" class="container">
-  <div class="row">
-    <div class="contenitore">
+  <div  class="row"  :class="colore">
+    <div  class="contenitore">
+
       <aside class="side-laterale">
         <!-- row-1 -->
       <div class="fics">
-        <div class="row-1">
+        <div class="row-1 " :class="colore1">
           <div class="img-profilo">
             <img src="img/avatar_1.jpg" alt="">
           </div>
           <div class="icone-1">
-            <i class="fas fa-circle-notch"></i>
+            <button :class="colore1" class="bottone" @click="cambiaColore1($event), cambiaColore($event), cambiaColore2($event), cambiaColore3($event)"><i class="fas fa-circle-notch"></i></button>
+
             <i class="fas fa-comment-alt"></i>
             <i class="fas fa-ellipsis-v"></i>
           </div>
@@ -43,8 +45,8 @@
         </div>
         <!-- finerow-2 -->
         <!-- row-3 -->
-        <div class="cerca-3">
-          <div class="cerca">
+        <div class="cerca-3" :class="colore1">
+          <div class="cerca  " :class="colore1">
 
             <input type="text" name="" value="" placeholder='Cerca o inizia una nuova chat'>
           </div>
@@ -54,14 +56,14 @@
         <!-- iniziochat -->
   <div class="scroll-chat">
 
-      <ul  class="demo">
+      <ul  class="demo" :class="colore1">
        <li  class="demo-chat" @click="prova(index)" v-for="(value,index) in object">
-        <div class="demo-chats">
+        <div  class="demo-chats" >
           <div class="img-logo">
             <img v-bind:src=value.img alt="">  </div>
           <div class="demo-text">
-            <p>{{value.text}}</p>
-            <p>{{value.messge[0].message}}</p>
+            <p :class="colore3">{{value.text}}</p>
+            <p :class="colore3">{{value.messge[0].message}}</p>
           </div>
         </div>
      </li>
@@ -70,13 +72,13 @@
 
         <!-- fine chat-->
       </aside>
-         <div class="nav-bar">
-           <nav>
+         <div class="nav-bar ">
+           <nav :class="colore1">
              <img v-bind:src=" object[currentUser].img" alt="">
-             <p>{{object[currentUser].text}}</p>
+             <p :class="colore3">{{object[currentUser].text}}</p>
            </nav>
            <!-- nav bassa input -->
-           <section class="section">
+           <section class="section " :class="colore1">
              <i class="far fa-smile"></i>
              <i class="fas fa-book"></i>
              <input type="text"
@@ -84,21 +86,27 @@
             v-model="newItem"
              @keyup.13="addItem"
              >
-              <button class="bottone" @click="addItem"><i class="fas fa-play"></i></button>
-             <i class="fas fa-microphone"></i>
+              <button :class="colore1" class="bottone" @click="addItem"><i class="fas fa-play"></i></button>
+             <i v-if="newItem==''" class="fas fa-microphone"></i>
            </section>
            <!-- fine nav bassa input -->
          </div>
-           <div class="sfondo-chat">
+           <div class="sfondo-chat" :class="colore2">
              <div class="chat-mess-v">
-               <div class="verde" v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
-               <p>{{element.message}}</p>
+               <div  class="verde" v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
+               <p >{{element.message}}</p>
                <p><small>{{element.date}}</small></p>
              </div>
+
 
              <div class="verde1" v-else>
              <p>{{element.message}}</p>
              <p><small>{{element.date}}</small></p>
+           </div>
+           <div class="smile-contenitore"  v-for="icone in smile" >
+             <ul>
+                 <li @click="inserisciSm">{{icone.smile1}}</li>
+             </ul>
            </div>
           </div>
         </div >

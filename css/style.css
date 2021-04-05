@@ -7,7 +7,7 @@ body{
 font-family: 'Lato', sans-serif;
 }
 .row{
-  background: linear-gradient(to top, #dbdbd2 75%, #009688 74%);
+
   width:100%;
   height:100vh;
   display: flex;
@@ -23,6 +23,12 @@ font-family: 'Lato', sans-serif;
   position:relative;
   overflow:hidden;
 }
+/* .red{
+  background: linear-gradient(to top, #dbdbd2 75%, #009688 74%);
+}
+.blue{
+  background: linear-gradient(to top, #009688  75%,#dbdbd2 74%);
+} */
 /* aside */
 .side-laterale{
   width:360px;
@@ -35,7 +41,7 @@ font-family: 'Lato', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color:#EDEDED;
+  /* background-color:#EDEDED; */
 }
 .img-profilo img{
   width:40px;
@@ -81,7 +87,7 @@ color:#CAC5C5;
   justify-content: center;
   align-items: center;
   height:60px;
-  background-color: #EDEDED;
+  /* background-color: #EDEDED; */
 }
 .img-logo img{
   width:40px;
@@ -117,7 +123,7 @@ width:100%;
   right:0;
   left:360px;
   width:640px;
-  background-color:#EDEDED;
+  /* background-color:#EDEDED; */
   height:64px;
   position:absolute;
   border-left: 1px solid lightgrey;
@@ -140,7 +146,7 @@ nav img{
   right:0;
   left:360px;
   width:640px;
-  background-color:#EDEDED;
+  /* background-color:#EDEDED; */
   height:64px;
   position:absolute;
   display: flex;
@@ -180,8 +186,9 @@ nav img{
   right:0px;
   left:360px;
   bottom:64px;
-  background-image: url(../img/mine.jpg);
+
 }
+
 .chat-mess-v{
   width:600px;
   height:100%;
@@ -223,4 +230,44 @@ nav img{
 .bottone{
   border: none;
     outline: none;
+}
+.red1{
+  background-image: url(../img/mine.jpg);
+}
+.blue1{
+  background-image: url(../img/sf.jfif);
+}
+.red{
+  background: linear-gradient(to top, #dbdbd2 75%, #009688 74%);
+}
+.blue{
+  background: linear-gradient(to top, #009688  75%,#dbdbd2 74%);
+}
+.color-grey{
+  background-color: #EDEDED;
+}
+.color-black{
+  background-color: #2B2F32;
+}
+.c-grey{
+  color:#2B2F32;
+}
+.c-black{
+  color:#EDEDED ;
+}
+.demo-chats , .demo-text :hover{
+  color:#2B2F32;
+}
+.smile-contenitore{
+  height:190px;
+  width:100%;
+  background-color:#EDEDED;
+
+}
+.smile-contenitore ul li{
+display: inline-block;
+list-style: none;
+padding:10px;
+font-size: 25px;
+color:#A0874B;
 }

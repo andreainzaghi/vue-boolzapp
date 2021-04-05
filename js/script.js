@@ -2,9 +2,17 @@
 new Vue({
   el: '#root',
   data: {
+    colore3:'c-grey',
+    colore2:'red1',
+    colore:'red',
+    colore1:'color-grey',
+    smile:[{smile1:'<class=\"fas fa-smile\"></i>',smile2:'<i class=\"fas fa-grin-squint-tears\"></i>',smile3:'<i class="fas fa-grin-hearts"></i>'}],
     object: [{
       img: 'img/avatar_2.jpg',
       text: 'Luigi',
+
+
+
       messge:[ {
                 date: '10/01/2020 15:50:00',
                 message: 'Ricordati di dargli da mangiare',
@@ -366,7 +374,45 @@ new Vue({
          this.newItem = '';
 
     }
+},
+cambiaColore:function(event){
+  if (this.colore=='red') {
+     this.colore='blue';
+  }else{
+    this.colore='red';
+  }
+
+},
+cambiaColore2:function(event){
+  if (this.colore2=='red1') {
+     this.colore2='blue1';
+  }else{
+    this.colore2='red1';
+  }  
+
+},
+inserisciSm:function(){
+
+
+},
+cambiaColore1:function(event){
+  if (this.colore1=='color-grey') {
+     this.colore1='color-black';
+  }else{
+    this.colore1='color-grey';
+  }
+
+},
+cambiaColore3:function(event){
+  if (this.colore3=='c-grey') {
+     this.colore3='c-black';
+  }else{
+    this.colore3='c-grey';
+  }
+
 }
+
+
  }
 
 
