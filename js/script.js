@@ -2,6 +2,7 @@
 new Vue({
   el: '#root',
   data: {
+
     colore5:'niente',
     colore3:'c-grey',
     colore2:'red1',
@@ -359,23 +360,20 @@ new Vue({
         }
    ],
    currentUser:0,
-    // search: '',
+     search: 'null',
    newItem:''
  },
- // computed: {
- //   filteredAndSorted(){
- //    // function to compare names
- //    function compare(a, b) {
- //      if (a.name < b.name) return -1;
- //      if (a.name > b.name) return 1;
- //      return 0;
- //    }
- //
- //    return this.userList.filter(user => {
- //       return user.name.toLowerCase().includes(this.search.toLowerCase())
- //    }).sort(compare)
- //   }
- // },
+ computed: {
+   resultQuery(){
+     if(this.search){
+     return this.messge.filter((value)=>{
+       return this.search.toLowerCase().split(' ').every(v => value.text.toLowerCase().includes(v))
+     })
+     }else{
+       return this.messge;
+     }
+   }
+ },
  methods:{
    prova:function(index){
      this.currentUser=index;
@@ -415,6 +413,7 @@ smileIcons:function(){
   }
 
 },
+
 // inserisciSm:function(){
 // icone.smile1.push(newItem);
 //
