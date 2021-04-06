@@ -366,8 +366,8 @@ new Vue({
  computed: {
    resultQuery(){
     if(this.search){
-        return this.object.filter((messge)=>{
-            return messge.name.includes(this.search);
+        return this.object.filter((object)=>{
+            return object.text.includes(this.search);
         });
     }
 }
