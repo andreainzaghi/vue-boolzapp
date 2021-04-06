@@ -70,7 +70,7 @@
       </ul> -->
       <!-- hgsahahahahaha -->
       <ul  class="demo" :class="colore1"  >
-       <li  class="demo-chat" @click="prova(index)" v-for="value in  resultQuery ">
+      <li  class="demo-chat" @keyup="prova(index)" v-for="value in  resultQuery ">
         <div  class="demo-chats"  >
           <div class="img-logo">
             <img v-bind:src=value.img alt="">  </div>

@@ -366,9 +366,11 @@ new Vue({
  computed: {
    resultQuery(){
     if(this.search){
-        return this.object.filter((object)=>{
-            return object.text.includes(this.search);
+        return this.object.filter((elemento)=>{
+            return elemento.text.toLowerCase().includes(this.search.toLowerCase());
         });
+    } else {
+        return this.object;
     }
 }
  },
