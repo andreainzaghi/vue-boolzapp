@@ -104,7 +104,13 @@
            </section>
            <!-- fine nav bassa input -->
          </div>
+
            <div class="sfondo-chat" :class="colore2">
+             <div :class="colore5"  class="emoji-icons " >
+               <ul>
+                   <li  v-for="icons1 in smile" ><span @click="inserisciSm">{{icons1}}</span> </li>
+               </ul>
+             </div>
              <div class="chat-mess-v">
                <div  class="verde" v-for="element in object[currentUser].messge" v-if="element.status == 'sent'">
                <p >{{element.message}}</p>
@@ -116,12 +122,12 @@
              <p>{{element.message}}</p>
              <p><small>{{element.date}}</small></p>
            </div>
-             <div :class="colore5"  >
-               <!-- <ul>
-                   <li @click="inserisciSm">{{icone.smile1}}</li>
-               </ul> -->
-             </div>
+
+
+
           </div>
+
+
         </div >
 
     </div>

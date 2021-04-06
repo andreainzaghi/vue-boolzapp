@@ -264,21 +264,19 @@ nav img{
   height:190px;
   width:640px;
   background-color:#EDEDED;
-  position: relative;
+  position:absolute;
   z-index: 33;
-animation-name: example;
-animation-duration: 0.2s;
-z-index: 4;
-
+bottom:0;
 
 }
-@keyframes example {
-  0%   {background-color:#EDEDED; left:0px; bottom:-100px;}
 
-  100% {background-color:#EDEDED; left:0px; top:0px;}
-}
 .niente{
   display:none;
+}
+.emoji-icons ul li{
+list-style: none;
+display: inline-block;
+  padding: 5px;
 }
 /* .smile-contenitore ul li{
 display: inline-block;

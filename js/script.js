@@ -8,7 +8,65 @@ new Vue({
     colore2:'red1',
     colore:'red',
     colore1:'color-grey',
-    // smile:[{smile1:'<class=\"fas fa-smile\"></i>',smile2:'<i class=\"fas fa-grin-squint-tears\"></i>',smile3:'<i class="fas fa-grin-hearts"></i>'}],
+     smile:[
+
+    '😀',
+  '  😃',
+    '😄',
+    '😁',
+    '😆',
+    '😅',
+    '🤣',
+  '  🙂',
+    '🙃',
+    '😉',
+    '😊',
+    '😇',
+
+    '😍' ,
+    '🤩' ,
+    '😘' ,
+    '😚',
+  '  😙',
+
+  '  😛',
+    '🤪' ,
+    '😝' ,
+  '  🤑',
+    '🤭',
+    '🤫',
+    '🤔',
+    '🤐',
+    '🤨',
+    '😐',
+  '  😑',
+    '😮',
+    '😯',
+    '😲',
+    '😳',
+
+    '😦',
+    '😧',
+    '😨',
+    '😰' ,
+    '😥',
+    '😢' ,
+    '😭' ,
+    '😱' ,
+  '  😖' ,
+    '😣' ,
+    '😞' ,
+    '😓' ,
+    '😩' ,
+    '😫',
+
+    '😤 ',
+    '🤬',
+    '👿',
+    '💀',
+    '☠️',
+    '💩' ,
+    '🤡'],
     object: [{
       img: 'img/avatar_2.jpg',
       text: 'Luigi',
@@ -409,15 +467,15 @@ smileIcons:function(){
   if (this.colore5=='niente') {
      this.colore5='smileContenitore';
   }else{
+
     this.colore5='niente';
   }
 
 },
 
-// inserisciSm:function(){
-// icone.smile1.push(newItem);
-//
-// },
+inserisciSm:function(){
+  this.object[this.currentUser].messge. push('icons1');
+},
 cambiaColore1:function(event){
   if (this.colore1=='color-grey') {
      this.colore1='color-black';
