@@ -10,7 +10,7 @@ new Vue({
     colore1:'color-grey',
      smile:[
 
-    '😀',
+  { carlo: '😀'},
   '  😃',
     '😄',
     '😁',
@@ -474,7 +474,8 @@ smileIcons:function(){
 },
 
 inserisciSm:function(){
-  this.object[this.currentUser].messge. push('icons1');
+    this.object[this.currentUser].messge. push({emoticon:'icons1'});
+
 },
 cambiaColore1:function(event){
   if (this.colore1=='color-grey') {
