@@ -162,23 +162,23 @@ nav img{
 /* scrollbar */
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
 /* Track */
-::-webkit-scrollbar-track {
+/* ::-webkit-scrollbar-track {
   background: #f1f1f1;
-}
+} */
 
 /* Handle */
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   background: grey;
-}
+} */
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+/* ::-webkit-scrollbar-thumb:hover {
   background: lightgrey;
-}
+} */
 /* sfondochat */
 .sfondo-chat{
   position: absolute;
@@ -192,17 +192,17 @@ nav img{
 .chat-mess-v{
   width:600px;
   height:100%;
-
+  overflow: scroll;
   margin: auto;
 }
 .verde{
   background-color: #DDF2C2;
   border-radius: 10px;
   padding:7px;
-  margin:7px 14px;
+  margin:7px 0px;
   min-width: 20%;
 
-  max-width: 50%;
+  max-width: 49%;
   left:50%;
   position: relative;
 }
@@ -212,7 +212,7 @@ nav img{
       padding:7px;
         margin:7px 14px;
         min-width: 20%;
-        max-width: 50%;
+        max-width: 49%;
 }
 .section i{
   font-size: 25px;
@@ -255,7 +255,7 @@ nav img{
 .c-black{
   color:#EDEDED ;
 }
-.demo-chats , .demo-text :hover{
+.demo :hover{
   color:#2B2F32;
 }
 .smileContenitore{
@@ -264,13 +264,13 @@ nav img{
   background-color:#EDEDED;
   position: relative;
 animation-name: example;
-animation-duration: 0.3s;
+animation-duration: 0.2s;
 z-index: 4;
 
 
 }
 @keyframes example {
-  0%   {background-color:#EDEDED; left:0px; bottom:-190px;}
+  0%   {background-color:#EDEDED; left:0px; bottom:-100px;}
 
   100% {background-color:#EDEDED; left:0px; top:0px;}
 }
