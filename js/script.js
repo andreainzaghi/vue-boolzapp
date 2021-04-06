@@ -360,19 +360,17 @@ new Vue({
         }
    ],
    currentUser:0,
-     search: 'null',
+     search: '',
    newItem:''
  },
  computed: {
    resultQuery(){
-     if(this.search){
-     return this.messge.filter((value)=>{
-       return this.search.toLowerCase().split(' ').every(v => value.text.toLowerCase().includes(v))
-     })
-     }else{
-       return this.messge;
-     }
-   }
+    if(this.search){
+        return this.object.filter((contact)=>{
+            return contact.name.includes(this.search));
+        });
+    }
+}
  },
  methods:{
    prova:function(index){
