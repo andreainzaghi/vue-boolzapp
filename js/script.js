@@ -474,7 +474,7 @@ smileIcons:function(){
 },
 
 inserisciSm:function(){
-    this.object[this.currentUser].messge. push({emoticon:'icons1'});
+     this.newItem . push({emoticon:'icons1'});
 
 },
 cambiaColore1:function(event){
